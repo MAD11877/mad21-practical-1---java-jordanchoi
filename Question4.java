@@ -18,6 +18,14 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
-    
+    // System.out.print("Please enter the amount of * for the base of triangle: ");
+    int userInput = in.nextInt();
+    for (int i = userInput; i > 0; i--) {
+      for (int x = 0; x < i; x++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+    in.close();
   }
 }
