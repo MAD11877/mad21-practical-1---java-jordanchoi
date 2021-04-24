@@ -19,7 +19,7 @@ public class Question2
     double weight = in.nextDouble();
     double bmi = weight / (height * height); 
     // formula followed by HealthHub yall don't accept :((weight / height / height) * 10000;
-    System.out.println("Your BMI is: " + df2.format(bmi));
+    System.out.println(df2.format(bmi));
     // System.out.printf("'.%2f'", bmi);
     in.close();
   }

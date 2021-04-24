@@ -14,6 +14,6 @@ public class Question3
     // System.out.print("Enter an integer: ");
     int userInput = in.nextInt();
     int results = userInput * userInput;
-    System.out.println("The result of your inputted integer multiply by itself is: " + results);
+    System.out.println(results);
   }
 }

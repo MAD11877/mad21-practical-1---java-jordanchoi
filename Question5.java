@@ -61,6 +61,6 @@ public class Question5
       }
     }
 
-    System.out.println("The mode of the sets of numbers you've entered is: " + currentMode);
+    System.out.println(currentMode);
   }
 }
