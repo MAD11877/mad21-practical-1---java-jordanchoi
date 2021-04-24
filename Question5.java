@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Question5
 {
@@ -27,6 +29,38 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    HashMap<Integer, Integer> intDict = new HashMap<Integer, Integer>(); 
+
+    System.out.print("Please enter the initial number: ");
+    // int amountOfPrompts = in.nextInt();
+    int i = 0;
+
+    while (i++ < amountOfPrompts) {
+      System.out.print(String.format("Integer number %s: ", i));
+      // int digits = in.nextInt();
+      if (intDict.containsKey(digits)) {
+        int addOne = intDict.get(digits);
+        addOne++;
+        intDict.replace(digits, addOne);
+      }
+      else {
+        intDict.put(digits, 1);
+      }
+    }
+
+    int currentMode = 0;
+    int compareValue = 0;
+
+    for (Integer k : intDict.keySet()) {
+      if (intDict.get(k) > compareValue) {
+       compareValue = intDict.get(k);
+       currentMode = k; 
+      }
+      else {
+        continue;
+      }
+    }
+
+    System.out.println("The mode of the sets of numbers you've entered is: " + currentMode);
   }
 }
