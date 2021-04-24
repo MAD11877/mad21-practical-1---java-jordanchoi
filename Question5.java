@@ -31,12 +31,12 @@ public class Question5
     Scanner in = new Scanner(System.in);
     HashMap<Integer, Integer> intDict = new HashMap<Integer, Integer>(); 
 
-    System.out.print("Please enter the initial number: ");
+    // System.out.print("Please enter the initial number: ");
     int amountOfPrompts = in.nextInt();
     int i = 0;
 
     while (i++ < amountOfPrompts) {
-      System.out.print(String.format("Integer number %s: ", i));
+      // System.out.print(String.format("Integer number %s: ", i));
       int digits = in.nextInt();
       if (intDict.containsKey(digits)) {
         int addOne = intDict.get(digits);

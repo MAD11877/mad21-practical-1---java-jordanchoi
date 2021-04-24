@@ -13,11 +13,12 @@ public class Question2
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("Please enter your height. (cm): ");
+    // System.out.print("Please enter your height. (cm): ");
     double height = in.nextDouble();
-    System.out.print("Please enter your weight. (kg): ");
+    // System.out.print("Please enter your weight. (kg): ");
     double weight = in.nextDouble();
-    double bmi = (weight / height / height) * 10000;
+    double bmi = weight / (height * height); 
+    // formula followed by HealthHub yall don't accept :((weight / height / height) * 10000;
     System.out.println("Your BMI is: " + df2.format(bmi));
     // System.out.printf("'.%2f'", bmi);
     in.close();
